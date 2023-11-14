@@ -1,0 +1,16 @@
+0: Schwarz
+1: Weiß
+2: Hell Cyan
+3: Dark Grau
+4: Rot
+5: -
+6: -
+7: -
+8: -
+9: SpecialColor1
+A: TextfarbeFG
+B: TextfarbeBG
+C: Levelfarbe1
+D: Levelfarbe2
+E: Multiple
+F: NewLine
