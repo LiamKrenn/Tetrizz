@@ -1,18 +1,53 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/GGZhlYg8)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=11982658)
-# Assignment 1 - Concurrency
+# Tetrizz - Tetris for console
 
-Im Rahmen dieses Übungsbeispiels soll eine Commandline-Version des Spiels Tetris in C++ umgesetzt werden.
+This is a clone of the famous NES-Tetris, that runs entirely in the command line in full resolution.
 
-## Projektbeschreibung
+To achieve this, I've written a whole "graphics engine", that only updates the necessary pixels. This was necessary to achieve the constant 60 FPS, like the original NES console does.
 
-Tetrizz. Ein NES-Tetris Klon im Terminal. Nur für Linux.
-Genauere Projektbeschreibung im docs folder.
-- Konstante 60 FPS (auch auf langsamen Rechnern)
-- Steuerung und Geschwindigkeiten wie beim Original
-- Randomizer wie beim Original
-- Buggy Level Colors wie beim Original
+<!-- vscode-markdown-toc -->
 
-Um das Programm ausführen zu können, muss das Terminal minimum 256 characters in der Breite und 112 Zeichen in der Höhe haben.
-Außerdem muss das Terminal die xterm 256 colors unterstützen! 
+- [Features](#features)
+- [Controls](#controls)
+- [Roadmap](#roadmap)
+- [Requirements](#requirements)
+- [Issues](#issues)
 
+<!-- vscode-markdown-toc-config
+	numbering=false
+	autoSave=false
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+## <a name='Features'></a>Features
+
+- Original scoring system
+- Controls and speeds (drop speed, etc.) like the original
+- Tetromino randomizer like the original
+- Same bugs as original (intentionally)
+
+## <a name='Controls'></a>Controls
+
+- A: <kbd>x</kbd>
+- B: <kbd>y</kbd>
+- start: <kbd>⏎ Enter</kbd>
+- select: <kbd>⇥ Tab</kbd>
+- D-Pad: <kbd>↓</kbd> <kbd>↑</kbd> <kbd>←</kbd> <kbd>→</kbd>
+
+## <a name='Roadmap'></a>Roadmap
+
+- Finishing all animations
+- Menu screen and end screen
+- B-Mode
+- (maybe capability for windows, although there are performance issues on the experimental builds for windows)
+
+## <a name='Requirements'></a>Requirements
+
+- Linux
+- xterm 256 color support in your terminal of choice
+  - It should be fast enough for any terminal, but if you experience performance problems, I recommend something like [alacritty](https://github.com/alacritty/alacritty) or [kitty](https://github.com/kovidgoyal/kitty)
+- 256 characters in width and 112 characters in height
+  - Zooming out in terminals is done with <kbd>Control</kbd> + <kbd>-</kbd> or <kbd>Control</kbd> + <kbd>⇧ Shift</kbd> + <kbd>-</kbd> most of the time
+
+## <a name='Issues'></a>Issues
+
+If you experience any problems, feel free to contact me!
