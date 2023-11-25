@@ -4,5 +4,5 @@ using namespace tetris;
 
 int main() {
   Game game = Game();
-  game.start(8);
+  game.start(0);
 }
