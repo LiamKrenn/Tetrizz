@@ -18,6 +18,7 @@ CFLAGS = -std=c++17 -I $(SRCDIR) -O3 -funroll-loops
 
 # linker flags
 #    add -lm to use mathematical funtions
+LDFLAGS = -pthread
 
 ########################################################
 # do not change
@@ -44,3 +45,7 @@ $(BUILDDIR)/input.o: $(BUILDDIR) $(SRCDIR)/input.cpp
 
 $(BUILDDIR)/game.o: $(BUILDDIR) $(SRCDIR)/game.cpp
 	$(CXX) $(CFLAGS) -o $(BUILDDIR)/game.o -c $(SRCDIR)/game.cpp $(LDFLAGS)
+
+
+$(BUILDDIR): 
+	mkdir -p $(BUILDDIR)

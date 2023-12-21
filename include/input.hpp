@@ -14,14 +14,14 @@
 #include <thread>
 #include <vector>
 
-#define A 120
-#define B 121
-#define START 10
-#define SELECT 9
-#define UP 65
-#define DOWN 66
-#define RIGHT 67
-#define LEFT 68
+#define A_key 120
+#define B_key 121
+#define START_key 10
+#define SELECT_key 9
+#define UP_key 65
+#define DOWN_key 66
+#define RIGHT_key 67
+#define LEFT_key 68
 
 namespace input {
 class Input {

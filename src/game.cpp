@@ -112,17 +112,17 @@ void Game::start(int start_level) {
 
     bool pressedDown = false;
     for (int key : input.getInput()) {
-      if (key == DOWN) {
+      if (key == DOWN_key) {
         pressedDown = true;
-      } else if (key == LEFT) {
+      } else if (key == LEFT_key) {
         moveLeft();
-      } else if (key == RIGHT) {
+      } else if (key == RIGHT_key) {
         moveRight();
-      } else if (key == A) {
+      } else if (key == A_key) {
         rotateCW();
-      } else if (key == B) {
+      } else if (key == B_key) {
         rotateCCW();
-      } else if (key == SELECT) {
+      } else if (key == SELECT_key) {
         printer.hide_next();
       }
     }
@@ -311,7 +311,7 @@ std::shared_ptr<BaseTetromino> Game::randomPiece() {
     case 5:
       return std::make_shared<BaseTetromino>(LTetromino());
       break;
-    case 6:
+    default:
       return std::make_shared<BaseTetromino>(ITetromino());
       break;
   }

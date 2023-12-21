@@ -27,17 +27,17 @@ void input::Input::operator()() {
     } else if (key == 27) {   // Escape Codes (Arrows, del, pgup, pgdown, ...)
       if (getchar() == 91) {  // Arrow
         switch (getchar()) {  // get which arrow
-          case UP:
-            translated = UP;
+          case UP_key:
+            translated = UP_key;
             break;
-          case DOWN:
-            translated = DOWN;
+          case DOWN_key:
+            translated = DOWN_key;
             break;
-          case RIGHT:
-            translated = RIGHT;
+          case RIGHT_key:
+            translated = RIGHT_key;
             break;
-          case LEFT:
-            translated = LEFT;
+          case LEFT_key:
+            translated = LEFT_key;
             break;
           default:
             continue;
