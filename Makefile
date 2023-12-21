@@ -14,11 +14,10 @@ SRC = $(SRCDIR)/main.cpp $(BUILDDIR)/decoder.o $(BUILDDIR)/printer.o $(BUILDDIR)
 
 
 # compiler flags:
-CFLAGS =  -Wall -std=c++17 -I $(SRCDIR) -O3 -funroll-loops
+CFLAGS = -std=c++17 -I $(SRCDIR) -O3 -funroll-loops
 
 # linker flags
 #    add -lm to use mathematical funtions
-LDFLAGS = -pthread
 
 ########################################################
 # do not change
